@@ -9,39 +9,53 @@ int main()
     cout << "Enter 2 for subtraction" << endl;
     cout << "Enter 3 for Multiplication" << endl;
     cout << "Enter 4 for Division" << endl;
+    cout << "Enter 5 to Exit" << endl;
 
     int choice;
     cout << "Enter your choice:";
     cin >> choice;
     cout << "---------------------------------" << endl;
-    int num1;
-    cout << "enter first number: ";
-    cin >> num1;
 
-    int num2;
-    cout << "enter second number:";
-    cin >> num2;
-
-    cout << "-----------------------------------" << endl;
-    switch (choice)
+    do
     {
-    case 1:
-        cout << num1<< "+" <<num2<<"="<< num1 + num2;
-        break;
-    case 2:
-        cout << num1<< "-" <<num2<<"="<< num1 - num2;
-        break;
-    case 3:
-        cout << num1<< "*" <<num2<<"="<< num1 * num2;
-        break;
-    case 4:
-        if(num1==0 || num2==0) cout<<"Divide by 0 is not allowed";
-        else{
-            cout << num1<< "/" <<num2<<"="<< num1 / num2;
+        if (choice == 0)
+        {
+            break;
         }
-        break;
-    default:
-        cout << "Invalid choice";
-    }
+        int num1;
+        cout << "enter first number: ";
+        cin >> num1;
+
+        int num2;
+        cout << "enter second number:";
+        cin >> num2;
+
+        cout << "-----------------------------------" << endl;
+
+        switch (choice)
+        {
+        case 1:
+            cout << num1 << "+" << num2 << "=" << num1 + num2;
+            break;
+        case 2:
+            cout << num1 << "-" << num2 << "=" << num1 - num2;
+            break;
+        case 3:
+            cout << num1 << "*" << num2 << "=" << num1 * num2;
+            break;
+        case 4:
+            if (num1 == 0 || num2 == 0)
+                cout << "Divide by 0 is not allowed";
+            else
+            {
+                cout << num1 << "/" << num2 << "=" << (float)num1 / (float)num2;
+            }
+            break;
+
+        default:
+            cout << "Invalid choice";
+        }
+    } while (choice != 0);
+
     return 0;
 }
