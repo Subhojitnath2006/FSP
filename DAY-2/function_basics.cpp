@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int maxOfFour(int a,int b,int c,int d){
+int maxOfFour(int a,int b,int c=0,int d=0){//example of default arguments
     int max;
     // if(a>b && a>c && a>d) max=a;
     // else if(b>a && b>c && b>d) max=b;
@@ -10,17 +10,17 @@ int maxOfFour(int a,int b,int c,int d){
         return max;
 }
 int main(){
-    int n1,n2,n3,n4;
+    int n1,n2;
     cout<<"Enter first Number:";
     cin>>n1;
     cout<<"Enter Second Number:";
     cin>>n2;
-    cout<<"Enter Third Number:";
-    cin>>n3;
-    cout<<"Enter Fourth Number:";
-    cin>>n4;
+    // cout<<"Enter Third Number:";
+    // cin>>n3;
+    // cout<<"Enter Fourth Number:";
+    // cin>>n4;
 
-    int maximum=maxOfFour(n1,n2,n3,n4);
+    int maximum=maxOfFour(n1,n2);
     cout<<"The Maximum Number is:"<<maximum;
 
 }
