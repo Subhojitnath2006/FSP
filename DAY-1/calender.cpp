@@ -19,11 +19,7 @@ int main(){
     int month;
     cout<<"Enter Month:";
     cin>>month;
-    int daysInMonth;
-    switch(month){
-        case 1: daysInMonth=31;
-                break;
-    }
+    int daysInMonth=31;   
     display(firstDay,daysInMonth);
     return 0;
 }
