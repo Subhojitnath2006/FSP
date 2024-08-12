@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-enum Day { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+enum Day{Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
 enum colour{red,green,blue};
 
 int main()
