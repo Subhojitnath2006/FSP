@@ -19,11 +19,11 @@ public:
 // Member functions defined Outside the class
 Person::Person() : name("noname"), age(20)
 {
-    cout << "In the default constructor";
+    cout << "In the default constructor"<<endl;
 }
 Person::~Person()
 {
-    cout << "In the default destructor";
+    cout << "In the default destructor"<<endl;
 }
 void Person::setName(string n)
 {
