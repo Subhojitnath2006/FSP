@@ -17,6 +17,7 @@ public:
     int getAge();
 };
 // Member functions defined Outside the class
+
 Person::Person() : name("noname"), age(20)
 {
     cout << "In the default constructor"<<endl;
@@ -46,4 +47,7 @@ int main()
     Person p1;
     cout << p1.getName() << endl
          << p1.getAge() << endl;
+
+    
+
 }
