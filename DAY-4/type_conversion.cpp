@@ -2,7 +2,7 @@
 using namespace std;
 
 class Car{
-    protected: 
+    public: 
        string number;
        string color;
     public:
@@ -40,8 +40,9 @@ class Truck : public Car{
 
 int main(){
     Car c;
-    Truck t;
-    c=t;
     c.display();
+    cout<<"----------------------"<<endl;
+    Truck t;
+    t.display();
     return 0;
 }
