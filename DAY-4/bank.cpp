@@ -27,3 +27,6 @@ int main(){
     b1.display();
 
 }
+
+/*Balance b1(1000);
+Balance b2=b1-500;*/
